@@ -1,28 +1,28 @@
 \documentclass[11pt]{charter}
 
-% El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+% El título de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
+\titulo{Customización masiva en la educación matemática} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 %\posgrado{Carrera de Especialización en Sistemas Embebidos} 
-\posgrado{Carrera de Especialización en Internet de las Cosas} 
-%\posgrado{Carrera de Especialización en Intelegencia Artificial}
+%\posgrado{Carrera de Especialización en Internet de las Cosas} 
+\posgrado{Carrera de Especialización en Inteligencia Artificial}
 %\posgrado{Maestría en Sistemas Embebidos} 
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Nombre del Autor} 
+\autor{Federico Perusset} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Nombre del Director}
+\director{Stand by}
 \pertenenciaDirector{pertenencia} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
 \codirector{} % si queda vacio no se deberíá incluir 
 \pertenenciaCoDirector{}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+\cliente{Federico Perusset}
+\empresaCliente{Emprendimiento Personal}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -32,9 +32,9 @@
 \juradoTres{Nombre y Apellido (3)}
 \pertenenciaJurTres{pertenencia (3)}
  
-\fechaINICIO{25 de agosto de 2020}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlanificacion{13 de octubre de 2020} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{22 de agosto de 2021}		%Fecha de defensa pública del trabajo final
+\fechaINICIO{04 de marzo de 2021}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlanificacion{31 de diciembre de 2021} 	%Fecha de final de cursada de GdP
+\fechaFINALTrabajo{04 de marzo de 2022}		%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -62,12 +62,12 @@
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
-1.0      & Creación del documento                                          & 27/06/2020 \\ \hline
-1.1      & Avances en alguna cosa                                          & dd/mm/aaaa \\ \hline
-1.2      & Otro ejemplo \newline
-		   Con texto partido \newline
-		   En varias líneas \newline
-		   A propósito                                                     & dd/mm/aaaa \\ \hline
+1.0      & Creación del documento                                          & 17/03/2021 \\ \hline
+1.1      & &  \\ \hline
+1.2     && \newline
+		 \newline
+		 \newline
+		 \\ \hline
 \end{tabularx}
 \end{table}
 
@@ -84,7 +84,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un sistema de control de temperatura de un calefón, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el armado de una planificación de estudio de matemática hecha a medida para cada alumno, según sus necesidades, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -107,35 +107,31 @@ Se adjunta a esta acta la planificación inicial.
 \section{Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
-\begin{consigna}{red}
-El objetivo es que el lector en una o dos páginas entienda de qué se trata el proyecto y cuáles son sus desafíos, su motivación y su importancia.
-Se debe destacar claramente cuál es el valor que agrega el proyecto a realizar. ``El presente proyecto se destaca especialmente por incorporar tal cosa... Esto lo diferencia de otros sistemas similares en que ...''
+\begin{consigna}{black}
 
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
+Desde siempre hubo un problema importante en la educación personalizada en las instituciones educativas, y es el docente avanza con los temas según los requerimientos del programa y del tiempo que tenga para darlos, y no según las velocidades de aprendizaje y dificultades puntuales de cada alumno/a. Por lo tanto, en asignaturas donde el contenido es acumulativo, como lo son las numéricas (matemática, física, química), las consecuencias de no entender un tema determinado condicionan el aprendizaje de los siguientes, resultando en desmotivación, frustración y negación por parte de los estudiantes. Esto, a su vez, desemboca en la falta de profesionales en áreas claves para el avance de una sociedad, como lo son la ingeniería y las ciencias, o, peor aún, en una disminución en la exigencia de aprobación de dichas materias por parte de las instituciones educativas. Ambos aspectos ponen en jaque el futuro de una nación.
 
-\begin{itemize}
-\item ¿Cómo se vincula este proyecto con la misión de la organización?
-\item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
-\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-\item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
-\item ¿Cuales son las necesidades que debe satisfacer?
-\item ¿Por dónde pasa la innovación?
-\end{itemize}
+Para resolver este conflicto, en necesario contar con una herramienta que pueda evaluar la situación de un alumno, como lo es su estado inicial de conocimiento y velocidad de aprendizaje, y determinar cuál es el camino
+a seguir para que entienda de la mejor manera un determinado tema. En el transcurso, habrá que evaluar la calidad y resultado de las sugerencias, y replanificar el camino de ser necesario, y al finalizar el proceso (una vez aprobada la materia o el exámen), mejorar el sistema de recomendación. Es por esto que la propuesta es encarar un proyecto de sistemas de recomendación basado en deep learning, que combine  imágenes, texto, features de los alumnos, ratings, y todo lo necesario para lograr el objetivo mencionado de entender un tema. 
 
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema }y una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''. Luego recién más abajo de haber puesto esta frase se pone la figura. La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+AGREGAR MOTIVACIÓN COMO CARACTERISTICA DEL ALUMNO
+
+El trabajo se hará en el contexto un emprendimiento personal, dedicado a clases particulares de materias duras y que se encuentra en etapa de crecimiento. Su misión de ""asegurar el desarrollo social por medio de la educación pedagógica"" está completamente en resonancia con el proyecto propuesto. El modelo de negocio es ""On Demand"", ya que las clases particulares se brindan según la demanda de las mismas, que suele variar según el momento del ciclo lectivo y del nivel para el cual se brinda la clase (secundario o universitario). Es por esto que el proyecto será un gran complemento al emprendimiento en curso, porque permitirá determinar a mayor velocidad los requerimientos de cada alumno/a, y delegar parte de la enseñanza, que ya no solo dependerá de los profesores sino además de material armado previamente.
+
+En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se puede observar el camino que va siguiendo el alumno, desde que ingresa al sistema al pedir apoyo para aprobar y entender un tema puntual, hasta que finaliza la planificación armada por el sistema de recomendación. Por último, el sistema le pide al alumno el resultado que obtuvo (su nota en el exámen) para mejorar las recomendaciones en futuros pedidos. 
+
 
 \vspace{25px}
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.7\textwidth]{./Figuras/diagBloques.png}
+\includegraphics[width=.7\textwidth]{./Figuras/DiagramaBloques.JPG}
 \caption{Diagrama en bloques del sistema}
 \label{fig:diagBloques}
 \end{figure}
 
 \vspace{25px}
 
-El tamaño de la tipografía en la figura debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama.
 \end{consigna}
 
 
@@ -143,18 +139,7 @@ El tamaño de la tipografía en la figura debe ser adecuado para que NO pase lo 
 \label{sec:interesados}
 
 \begin{consigna}{red} 
-Nota: (borrar esto y todas las consignas en color rojo antes de entregar este documento).
  
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos.
- 
-Si se considera que una persona cumple dos o más roles, entonces sólo dejarla en el rol más importante. Por ejemplo:
-
-\begin{itemize}
-\item Si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente.
-\item Si una persona es el Responsable, no debe ser colocado también como Miembro del equipo.
-\end{itemize}
-
-Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por ejemplo.
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -163,30 +148,22 @@ Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por e
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+
+Cliente       & \clientename      &\empclientename	&       CEO 	\\ \hline
+Impulsor      &   Federico Perusset                &           Emprendimiento Personal   	&   CEO     	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &                   &              	&        	\\ \hline
+
 Orientador    & \supname	      & \pertesupname 	& Director	Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+
+
+Usuario final &   Federico Perusset                &       Emprendimiento Personal       	&      CEO  	\\ \hline
 \end{tabularx}
 \end{table}
 
-El Director suele ser uno de los Orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Sería deseable listar a continuación de la tabla las principales características de cada interesado.
  
-Por ejemplo:
+(¿Agrego algo acá?)
 \begin{itemize}
-\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
+\item Cliente: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
 \item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
 \item Orientador: María Gómez, nos va a poder ayudar mucho con la gestión de impuestos.
 \end{itemize}
@@ -198,23 +175,20 @@ Por ejemplo:
 \section{1. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
-
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
+\begin{consigna}{black}
+El propósito de este proyecto es customizar o personalizar la enseñanza y experiencia de aprendizaje de cada alumno, para aumentar sus posibilidades de entendimiento de un determinado tema y aprobación de exámenes.
 \end{consigna}
 
 \section{2. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+\begin{consigna}{black}
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+El proyecto incluye el armado de una planificación de enseñanza a un alumno o alumna de nivel secundario, a definir el año al que pertenece, para el aprendizaje de un tema puntual de la materia matemática, también a definir (por ejemplo función cuadrática, derivadas, ecuaciones, etc.). La planificación incluirá todo el material y clases necesarias para la persona, como videos teóricos, videos prácticos, autoevaluaciones, resumenes y clases particulares.
 
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
+El presente proyecto no está orientado a estudiantes de nivel universitario ni primario, ni a aquellos que necesiten ayuda con otras materias por fuera de matemática. Incluso dentro de matemática, sólo se analizará la enseñanza de un tema determinado. 
 
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
+
 
 \end{consigna}
 
@@ -222,52 +196,42 @@ Explicitar además todo lo que no quede incluido (``El presente proyecto no incl
 \section{3. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+\begin{consigna}{black}
+Para el desarrollo del presente proyecto se supone que: 
 
 \begin{itemize}
-\item Supuesto 1
-\item Supuesto 2...
+\item El tiempo para realizar el proyecto será alrededor de 600 horas. Es una posibilidad que la dificultad en programar sea un inconveniente, y requiera más tiempo que el estimado. 
+
+\item El armado del user interface no va a ser difícil de armar. Esto puede llegar a ser una complicación y no llegar a realizarse si los tiempos estimados. Esto incluye la página donde el usuario puede ver e interactuar con planificación, donde se deberían poder visualizar los videos teóricos y prácticos, material complementario, autoevaluaciones y clases particulares pautadas. 
+
+\item El hardware disponible para correr simulaciones y armar los programas tiene los requerimientos necesarios para llevar a cabo el proyecto. 
 \end{itemize}
 
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
 \end{consigna}
 
 \section{4. Requerimientos}
 \label{sec:requerimientos}
-
-\begin{consigna}{red}
-Los requerimientos deben numerarse y de ser posible agruparlos por afinidad:
-
+\begin{consigna}{black}
 \begin{enumerate}
-\item Grupo de requerimientos asociados con...
+\item Grupo de requerimientos asociados con conocimiento:
 	\begin{enumerate}
-	\item Requerimiento 1
-	\item Requerimiento 2
-	\item Requerimiento 3 (prioridad menor)
+	\item Deep Learning, combinando uso de imágenes, texto, ratings y características de los alumnos
+	\item Programación avanzada en Python
+	\item Otra herramienta o conocimiento (a definir)
 	\end{enumerate}
-\item Grupo de requerimientos asociados con...
+\item Grupo de requerimientos asociados con las pruebas del servicio para aplicación de la metodología Lean
 	\begin{enumerate}
-	\item Requerimiento 1
-	\item Requerimiento 2 (prioridad menor)
+	\item Número elevado de clientes que estén dispuestos a probar el sistema. Número puntual: a definir
 	\end{enumerate}
+	
+\item Grupo de requerimientos asociados regulaciones y normas vigentes: 
+
+	\begin{enumerate}
+	\item A definir
+	\item A definir
+	\end{enumerate}
+	
 \end{enumerate}
-
-Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
-
-De ser posible indicar cómo se obtuvieron cada uno de los requerimientos 
-
-Indicar claramente cuál es la prioridad entre los distintos requerimientos. 
-
-No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!
-
-Y al escribirlos seguir las siguientes reglas:
-\begin{itemize}
-\item Ser breve y conciso (nadie lee cosas largas). 
-\item Ser específico: no dejar lugar a confusiones.
-\item Expresar los requerimientos en términos que sean cuantificables y medibles.
-\end{itemize}
-
 \end{consigna}
 
 \section{Historias de usuarios (\textit{Product backlog})}
@@ -279,14 +243,12 @@ Descripción: En esta sección se deben incluir las historias de usuarios y su p
 
 \section{5. Entregables principales del proyecto}
 \label{sec:entregables}
-
-\begin{consigna}{red}
-Cosas como: 
+\begin{consigna}{black}
 \begin{itemize}
-\item Manual de uso
-\item Diagrama esquemático
-\item Código fuente
-\item Diagrama de instalación
+\item Obtención de características del alumno y del objetivo 
+\item Material necesario, como videos, para armar planificaciones
+\item Código fuente del sistema de recomendación
+\item Código fuente del sistema de aprendizaje del algoritmo
 \item Informe final
 
 \end{itemize}
@@ -295,36 +257,45 @@ Cosas como:
 
 \section{6. Desglose del trabajo en tareas}
 \label{sec:wbs}
-
-\begin{consigna}{red}
-Se recomienda mostrar el WBS mediante una lista indexada:
-
+\begin{consigna}{black}
 \begin{enumerate}
-\item Grupo de tareas 1
+\item Definición del tema de matemática para el cual se va a planificar y enseñar
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Analizar profundidad de cada tema según institutción (10 horas)
+	\item Analizar conceptos previos necesarios (10 horas)
 	\end{enumerate}
-\item Grupo de tareas 2
+\item Diseño de encuesta a alumno (para características y objetivo)
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Definición de necesidades para el sistema de recomendación (10 horas)
+	\item Determinación de preguntas mínimas (10 horas)
+	\item Diseño de Base de Datos de alumnos (10 hs)
 	\end{enumerate}
-	\item Grupo de tareas 3
+\item Armado del sistema de recomendación (planificación) (300 horas, no tengo idea de tiempos)
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\item Tarea 4 (tantas hs)
-	\item Tarea 5 (tantas hs)
+	\item Tarea 1 (... hs)
+	\item Tarea 2 (... hs)
+	\item Tarea 3 (... hs)
+	\item Tarea 4 (... hs)
+	\item Tarea 5 (... hs)
 	\end{enumerate}
-\end{enumerate}
+\item Armado user interface con planificación y enseñanza
+	\begin{enumerate}
+	\item Diseño y armado de user interface con planificación (20 hs)
+	\item Diseño y armado del alojamiento de cada material (20 hs)
+	\end{enumerate}
+\item Armado del sistema de replanificación (100 horas, no tengo idea de tiempos)
+	\begin{enumerate}
+	\item Tarea 1 (... hr)
+	\item Tarea 2 (... hr)
+	\end{enumerate}
+\item Armado del sistema de mejoramiento del sistema de recomendación (150 horas, no tengo idea de tiempos)
+	\begin{enumerate}
+	\item Tarea 1 (... hr)
+	\item Tarea 2 (... hr)
+	\end{enumerate}	
+\end{enumerate}	
 
-Cantidad total de horas: (tantas hs)
-
-Se recomienda que no haya ninguna tarea que lleve más de 40 hs. 
+Cantidad total de horas: 640 hr
 
 \end{consigna}
 
